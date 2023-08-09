@@ -1,0 +1,21 @@
+.NavMenu{
+    min-height: 5vh;
+    width: 100%;
+    display: flex;
+   
+  }
+  
+  .NavMenuItemOne{
+    display: flex;
+    min-height: 100%;
+  }
+
+  .NavMenuItemTwo{
+    display: flex;
+    min-height: 100%;
+  }
+
+  .NavMenuItemThree{
+    display: flex;
+    min-height:100%
+  }
