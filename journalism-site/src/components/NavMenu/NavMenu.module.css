@@ -1,21 +1,56 @@
 .NavMenu{
-    min-height: 5vh;
+    min-height: 4%;
     width: 100%;
     display: flex;
+    gap: 2em;
+    padding: 1em;
    
   }
   
   .NavMenuItemOne{
     display: flex;
     min-height: 100%;
+    width: 8%;
+    gap: 1em;
+    align-items: center;
+
   }
 
   .NavMenuItemTwo{
     display: flex;
     min-height: 100%;
+    align-items: center;
+    width: 75%;
+    justify-content: center;
+    gap: 1em;
+    
+  }
+
+  .ItemOne{
+    border-right: 0.09375em solid black;
+    padding-right: 0.625em;
+  }
+
+  .ItemTwo{
+    border-right: 0.09375em solid black;
+    padding-right: 0.625em;
+  }
+
+  .ItemThree{
+    border-right: 0.09375em solid black;
+    padding-right: 0.625em;
+  }
+
+  .ItemFour{
+    border-right: 0.09375em solid black;
+    padding-right: 0.625em;
   }
 
   .NavMenuItemThree{
     display: flex;
-    min-height:100%
+    min-height:100%;
+    width: 17%;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
   }

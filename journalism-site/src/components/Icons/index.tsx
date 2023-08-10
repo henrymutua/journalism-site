@@ -1,1 +1,1 @@
-export {hamburger, searchIcon, faceBookIcon, twitterIcon, instagramIcon} from './Icons'
+export {Hamburger, SearchIcon, FacebookIcon, TwitterIcon, InstagramIcon} from './Icons'
