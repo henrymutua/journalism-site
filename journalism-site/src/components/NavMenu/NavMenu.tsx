@@ -15,6 +15,8 @@ const NavMenu = () => {
                 <div className={styles.ItemThree}>ARCHIVES</div>
                 <div className={styles.ItemFour}>ABOUT</div>
                 <div className={styles.ItemFive}>MASTHEAD</div>
+                <div className={styles.ItemSix}>CAREERS</div>
+                <div className={styles.ItemSeven}>EVENTS</div>
             </div>
             <div className={styles.NavMenuItemThree}>
                 <FacebookIcon/>

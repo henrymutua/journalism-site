@@ -1,0 +1,10 @@
+.NewsBody{
+    min-height: 70%;
+    width: 100%;
+    display: flex;
+}
+
+.NewsImage{
+    min-height: 100%;
+    width: 60%;
+}
