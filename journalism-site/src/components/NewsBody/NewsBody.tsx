@@ -1,26 +1,23 @@
 import React from 'react';
 import styles from './NewsBody.module.css';
+import { Article } from '@/data/data';
 
+interface NewsBodyProps {
+    article: Article;
+  }
+  
 
-
-// Define a TypeScript type for the article prop
-interface Article {
-  id: number;
-  title: string;
-  content: string;
-  author: string;
-  date: string;
-  imageUrl: string;
-}
-const NewsBody =({article}: {article: Article}) =>{
+const NewsBody : React.FC<NewsBodyProps> =({ article }) =>{
     return(
         <div className={styles.NewsBody}>
             <img
+            height={100}
+            width={200}
             src={article.imageUrl}
             className={styles.NewsImage}
             />
             <div className={styles.NewsText}>
-                {article.content}.slice(0, 50)
+                {article.content.slice(0, 100)}...
             </div>
         </div>
     )

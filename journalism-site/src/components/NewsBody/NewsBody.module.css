@@ -1,7 +1,12 @@
+
 .NewsBody{
-    min-height: 70%;
+    min-height: 60%;
     width: 100%;
     display: flex;
+    justify-content: flex-start;
+    margin: 3em;
+    justify-content: center;
+    align-items: center;
 }
 
 .NewsImage{
