@@ -11,13 +11,14 @@ const NewsBody : React.FC<NewsBodyProps> =({ article }) =>{
     return(
         <div className={styles.NewsBody}>
             <img
-            height={100}
-            width={200}
             src={article.imageUrl}
             className={styles.NewsImage}
             />
             <div className={styles.NewsText}>
-                {article.content.slice(0, 100)}...
+                <div><h1>{article.title}</h1></div>
+                <div><h2>{article.author}</h2></div>
+                <div><h3>{article.date}</h3></div>
+                <div className={styles.paragraph}>{article.content.slice(0, 500)}...</div>
             </div>
         </div>
     )
