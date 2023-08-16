@@ -1,0 +1,23 @@
+.LatestBody{
+    min-height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 3em;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 2em;
+    margin-bottom: 3em;
+    padding-bottom: 1em;
+}
+
+.NewsText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paragraph{
+    margin-top: 2em;
+}
