@@ -1,13 +1,12 @@
 .NewsGrid{
-    min-height: 50%;
-    width: 50%;
+    min-height: 80%;
+    width: 100%;
     display: grid;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-areas:
-    "row row row row row"
-    "row row row row row"
-    "row row row row row"
-    "row row row row row"
-    "row row row row row"
+    grid-template-columns:repeat(3, 1fr); /* 20% minimum, 1fr maximum */
+    grid-template-rows: auto;
+    grid-gap: 1.5em;
+}
+
+.NewsGridItem{
+    grid-column-start: 0/1;
 }

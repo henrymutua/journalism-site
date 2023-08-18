@@ -1,0 +1,16 @@
+
+.ItemContainer{
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 60%;
+    gap: 2em;
+}
+
+.NewsItemImage{
+    height: 90%;
+    width: 100%;
+    border-radius: 1em;
+
+}
