@@ -12,9 +12,19 @@ const NewsGrid : React.FC<NewsGridProps> = ({ articles }) => {
     return(
         
         <div className={styles.NewsGrid}>
-        <div className={styles.NewsGridItem}>
-        {newsArticle.map((article) => (<NewsItem key={article.id} article={article}/>))}</div>
+         
+        {newsArticle.map((article, index) => (
+        <div className={styles.NewsGridItem}
+            key={article.id}
+        //     style={{
+        //     // gridRow: `${index + 1} / span 1`, // Each item starts at a row and spans 1 row
+        //   }}
+          >
+          <NewsItem key={article.id} article={article}/>       
+          </div>
+       ))} 
         </div>
+        
     )
 };
 

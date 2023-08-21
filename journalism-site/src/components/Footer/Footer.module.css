@@ -1,0 +1,47 @@
+.Footer{
+    min-height: 50%;
+    width: 100%;
+    display: flex;
+    /* background-color: black; */
+    padding: 1em;
+    justify-content: space-between;
+    
+    
+}
+
+.FooterOne{
+    /* color: white; */
+    display: flex;
+    flex-direction: column;
+    gap: 10em;
+    width: 35%;
+    height: 100%;
+}
+
+.FooterTwo{
+    /* color: white; */
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 1em;
+    width: 30%;
+    height: 100%;
+}
+
+.FooterIcons{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+
+}
+
+.FooterThree{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+}
