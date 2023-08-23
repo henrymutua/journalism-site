@@ -1,22 +1,57 @@
 .Hamburger{
     height: 100%;
-    width: 40%;
+    width: 90%;
 }
 .SearchIcon{
     height: 100;
-    width:40%;
+    width:30%;
 }
 .FacebookIcon{
     height: 100%;
-    width: 15%
+    width: 30%
 }
 
 .TwitterIcon{
     height: 100%;
-    width: 15%
+    width: 30%
 }
 
 .InstagramIcon{
     height: 100%;
-    width: 15%;
+    width: 30%;
 }
+
+@media (max-width: 320px){
+    .FacebookIcon{
+    width:30%
+    }
+    .InstagramIcon{
+        width: 30%;
+    }
+    .TwitterIcon{
+        width: 30%;
+    }
+}
+
+@media (max-width: 321px) and (max-width: 455px){
+    .FacebookIcon{
+        width:30%
+        }
+        .InstagramIcon{
+            width: 30%;
+        }
+        .TwitterIcon{
+            width: 30%;
+        }
+}
+  @media (min-width: 768px) and (min-width: 768px) {
+    .Hamburger{
+        width: 50%;
+    }
+  }
+
+  @media (min-width: 3840px) and (max-width: 3840px) {
+    .FacebookIcon, .InstagramIcon, .TwitterIcon{
+        width: 20%;
+    }
+  }

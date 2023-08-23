@@ -8,6 +8,7 @@
   width: 100vw;
   background-color: white;
   font-family: 'Cardo', serif;
+  line-height: 1.6;
   overflow: scroll;
 }
 

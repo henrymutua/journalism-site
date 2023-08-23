@@ -6,13 +6,14 @@
     width: 100%;
     height: 100%;
     gap: 2em;
+    margin: 3em;
 }
 
 .NewsItemImage{
     height: 200px;
     width: 100%;
     width: auto;
-    border-radius: 1em;
+   
 }
 .NewsItemText{
     display: flex;

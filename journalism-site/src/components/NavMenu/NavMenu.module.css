@@ -1,16 +1,16 @@
 .NavMenu{
-    min-height: 4%;
+    min-height: 5%;
     width: 100%;
     display: flex;
     
-    padding: 1em;
+    padding: 0.5em;
    
   }
   
   .NavMenuItemOne{
     display: flex;
     min-height: 100%;
-    width: 5%;
+    width: 10%;
     gap: 1em;
     align-items: center;
 
@@ -58,9 +58,108 @@
 
   .NavMenuItemThree{
     display: flex;
-    min-height:100%;
-    width: 10%;
+    height:100%;
+    width: 20%;
     justify-content: center;
     align-items: center;
     gap: 1em;
   }
+
+  @media (max-width: 320px) {
+    .NavMenu{
+      justify-content: space-between;
+      min-height: 10%;
+    }
+    .NavMenuItemOne{
+      width: 30%;
+    }
+    .NavMenuItemTwo {
+      display: none;
+      /* Apply your adjusted styles for larger screens here */
+    }
+    .NavMenuItemThree{
+      width: 35%;
+    }
+  }
+
+  @media (min-width: 321px) and (max-width: 450px) {
+
+    .NavMenu{
+      width: 100%;
+      justify-content: space-between;
+      min-height: 10%;
+    }
+
+    .NavMenuItemOne{
+      width: 30%;
+    }
+
+   .NavMenuItemTwo{
+    display: none;
+   }
+   .NavMenuItemThree{
+    width: 25%;
+   }
+  }
+  @media (min-width: 426px) and (max-width: 768px) {
+    .NavMenu{
+      width: 100%;
+      justify-content: space-between;
+    }
+    .NavMenuItemOne{
+      gap: 0.5em;
+    }
+    .NavMenuItemTwo {
+      width: 40%;
+      font-size: 0.6em;
+
+      /* Apply your adjusted styles for larger screens here */
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1600px) {
+    
+    .NavMenuItemTwo {
+      margin-left: 1em;
+      width: 90%;
+      font-size: 1em;
+
+      /* Apply your adjusted styles for larger screens here */
+    }
+  }
+
+  @media (min-width: 1601px) and (max-width: 2560px) {
+    
+    .NavMenuItemTwo {
+      margin-left: 1em;
+      width: 90%;
+      font-size: 2em;
+
+      /* Apply your adjusted styles for larger screens here */
+    }
+  }
+
+ 
+  @media (min-width: 2561px) and (max-width: 3840px) {
+    .NavMenuItemTwo {
+      margin-left: 1em;
+      width: 90%;
+      font-size: 2em;
+
+      /* Apply your adjusted styles for larger screens here */
+    }
+
+    .NavMenuItemThree {
+      width: 15%;
+      gap: 2em;
+    }
+
+    .ItemOne, .ItemTwo, .ItemThree, .ItemFour, .ItemFive, .ItemSix{
+      width: 12%;
+    }
+  }
+
+  
+  
+ 
+  

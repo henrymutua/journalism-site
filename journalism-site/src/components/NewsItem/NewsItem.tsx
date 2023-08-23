@@ -19,7 +19,7 @@ const NewsItem: React.FC<NewsItemProps> =({ article }) => {
                 <div><h1>{article.title}</h1></div>
                 <div><h2> by {article.author}</h2></div>
                 
-                <div className={styles.paragraphItem}>{article.content.slice(0, 200)}...</div>
+                <div className={styles.paragraphItem}>{article.content.slice(0, 150)}...</div>
                 </div>
                 </div>
 
