@@ -7,19 +7,18 @@
 }
 @media (max-width: 320px){
     .Title{
-        margin-top: 20em;
+        margin-top: 22em;
     }
 }
 @media (min-width: 321px) and (max-width: 426px){
     .Title{
         
-        margin-top: 15em;
+        margin-top: 20em;
     }
 }
 
 @media (min-width: 427px) and (max-width: 768px){
     .Title{
-        
-        margin-top: 5em;
+        margin-top: 15em;
     }
 }

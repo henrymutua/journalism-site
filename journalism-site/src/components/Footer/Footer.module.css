@@ -1,5 +1,5 @@
 .Footer{
-    min-height: 50%;
+    height: 50%;
     width: 100%;
     display: flex;
     /* background-color: black; */
@@ -7,6 +7,8 @@
     justify-content: space-between;
     margin-top: 15em;
     margin-bottom: 5em;
+    
+    
 }
 
 .FooterOne{
@@ -44,4 +46,92 @@
     gap: 2em;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 320px){
+        .Footer{
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 20%;
+            margin-top: 115em;
+            gap: 3em;
+            
+        }
+
+        .FooterOne{
+            height: 25%;
+            gap: 1em;
+            width: 100%;
+            align-items: center;
+            text-align: center;
+            
+        }
+        .LogoFooter{
+            width: 30%;
+        }
+       
+        .FooterTwo{
+            width: 100%;
+            align-items: center;
+            justify-self: center;
+            margin-top: 4em;
+        }
+
+        .FooterThree{
+            margin-top: 10em;
+            width: 80%;
+            align-items: center;
+        }
+
+        .FooterIcons{
+            width: 55%;
+        }
+
+        .FooterOne p {
+            align-items: center;
+            width: 100%;
+        }
+       
+}
+
+@media (min-width: 321px) and (max-width: 426px){
+    .Footer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 120em;
+        align-items: center;
+        gap: 3em;
+    }
+    .FooterOne{
+        gap: 1em;
+        width: 100%;
+        align-items: center;
+    }
+
+    .LogoFooter{
+        width: 30%;
+    }
+    .FooterTwo p{
+        width: 100%;
+    }
+    .FooterIcons{
+        width: 75%;
+    }
+    .FooterThree{
+        margin-top: 2em;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+    .Footer{
+        margin-top: 100em;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .Footer{
+        margin-top: 50em;
+    }
 }

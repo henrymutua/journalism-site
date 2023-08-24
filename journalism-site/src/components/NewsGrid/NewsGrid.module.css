@@ -19,3 +19,25 @@
     margin-bottom: 6em;
 }
 
+@media (max-width: 320px){
+    .NewsGrid{
+        gap: 5em;
+    }
+   
+}
+
+@media (min-width: 321px) and (max-width: 426px){
+
+    .NewsGrid{
+        gap: 5em;
+    }
+   
+
+}
+
+@media (min-width: 426px) and (max-width: 768px){
+
+   
+
+}
+

@@ -47,6 +47,9 @@
     .NewsText h3{
         font-size: 0.8em;
     }
+    .paragraph{
+        padding: 1em;
+    }
 }
 
 @media (min-width: 321px) and (max-width: 426px) {
@@ -75,6 +78,9 @@
     .NewsText h3{
         font-size: 0.8em;
     }
+    .paragraph{
+        padding: 1em;
+    }
     
   }
 
@@ -82,11 +88,15 @@
     .LatestBody{
         display: flex;
         flex-direction: column;
-        height: 40%;
-        margin-top: 5em;
+        height: 90%;
+        margin-top: 2em;
+        padding-top: 0;
+        justify-content: space-between;
     }
     .NewsImage{
-        height: 70%;
+        height: 95%;
+        width: 100%;
         
     }
+    
   }

@@ -15,7 +15,7 @@ const Footer = () =>{
                 <p>COPYRIGHT &copy; CHEKI {new Date().getFullYear()}</p>
             </div>
             <div className={styles.FooterTwo}>
-                <p>STAY IN TOUCH</p>
+                <p>STAY IN TOUCH:</p>
                 <div className={styles.FooterIcons}>
                     <FacebookIcon/>
                     <TwitterIcon/>
