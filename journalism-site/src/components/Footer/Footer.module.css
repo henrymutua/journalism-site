@@ -100,9 +100,9 @@
     .Footer{
         display: flex;
         flex-direction: column;
-        margin-top: 120em;
+        margin-top: 140em;
         align-items: center;
-        gap: 3em;
+        gap: 5em;
     }
     .FooterOne{
         gap: 1em;
@@ -126,12 +126,23 @@
 
 @media (min-width: 426px) and (max-width: 768px){
     .Footer{
-        margin-top: 100em;
+        margin-top: 130em;
+        text-align: center;
     }
 }
 
 @media (min-width: 769px) and (max-width: 1024px){
     .Footer{
         margin-top: 50em;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 2560px){
+    .FooterOne{
+        margin-top: -10em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 }

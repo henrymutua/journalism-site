@@ -3,15 +3,13 @@ import styles from './Footer.module.css';
 import { FacebookIcon } from '../Icons';
 import { TwitterIcon } from '../Icons';
 import { InstagramIcon } from '../Icons';
+import Header from '@/components/Header/Header'
 
 const Footer = () =>{
     return(
         <div className={styles.Footer}>
             <div className={styles.FooterOne}>
-                <img
-                className={styles.LogoFooter}
-                src='images/cheki.png'
-                />
+                <Header/>
                 <p>COPYRIGHT &copy; CHEKI {new Date().getFullYear()}</p>
             </div>
             <div className={styles.FooterTwo}>
