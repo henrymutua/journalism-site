@@ -8,7 +8,8 @@
 
 @media (max-width: 320px){
     .Header{
-        margin-bottom: -5em;
+        margin-top: -3em;
+        margin-bottom: -1em;
         display: flex;
         padding-bottom: 2em;
         justify-content: center;
@@ -19,7 +20,8 @@
 @media (min-width: 321px) and (max-width: 425px){
     .Header{
         width: 300px;
-        margin-bottom: -5em;
+        margin-top: -3em;
+        margin-bottom: -1em;
         display: flex;
         padding-bottom: 2em;
         justify-content: center;

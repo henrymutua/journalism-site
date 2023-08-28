@@ -1,12 +1,32 @@
 import React from 'react';
 import styles from './NavMenu.module.css';
 import { Hamburger, SearchIcon, FacebookIcon, TwitterIcon, InstagramIcon } from '../Icons/Icons';
+import { useState, useContext } from 'react';
 
 const NavMenu = () => {
+
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    
+    const toggleMenu = () =>{
+        setIsMenuOpen(!isMenuOpen);
+    }
     return(
         <div className={styles.NavMenu}>
             <div className={styles.NavMenuItemOne}>
-                <Hamburger/>
+                <Hamburger onClick ={toggleMenu}/>
+                    {isMenuOpen && (
+                        <div className={styles.MenuOverlay}>
+                          <div className={styles.MenuList}>
+                            <ul>
+                              <li>Menu Item 1</li>
+                              <li>Menu Item 2</li>
+                              {/* Add more menu items */}
+                            </ul>
+                          </div>
+                        </div>
+                      )}
+                    
+            
                 <SearchIcon/>
             </div>
             <div className={styles.NavMenuItemTwo}>

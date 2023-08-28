@@ -8,11 +8,15 @@ import Footer from '@/components/Footer/Footer'
 import newsArticle from '@/data/data'
 import Title from '@/components/Title/Title'
 import Header from '@/components/Header/Header'
- 
+
+
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  
+   
+    
   return (
     <div className={styles.main}>
       <Header/>
