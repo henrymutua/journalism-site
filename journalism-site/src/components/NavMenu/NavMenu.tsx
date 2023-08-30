@@ -1,31 +1,23 @@
-import React from 'react';
+"use client";
+import React, { useState } from 'react';
 import styles from './NavMenu.module.css';
-import { Hamburger, SearchIcon, FacebookIcon, TwitterIcon, InstagramIcon } from '../Icons/Icons';
-import { useState, useContext } from 'react';
+import { SearchIcon, FacebookIcon, TwitterIcon, InstagramIcon} from '../Icons/Icons';
+import Hamburger from '../Hamburger/HamburgerIcon';
+import SideBar from '../SideBar/SideBar';
 
 const NavMenu = () => {
 
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
     
-    const toggleMenu = () =>{
-        setIsMenuOpen(!isMenuOpen);
-    }
     return(
         <div className={styles.NavMenu}>
             <div className={styles.NavMenuItemOne}>
-                <Hamburger onClick ={toggleMenu}/>
-                    {isMenuOpen && (
-                        <div className={styles.MenuOverlay}>
-                          <div className={styles.MenuList}>
-                            <ul>
-                              <li>Menu Item 1</li>
-                              <li>Menu Item 2</li>
-                              {/* Add more menu items */}
-                            </ul>
-                          </div>
-                        </div>
-                      )}
-                    
+                
+                    <Hamburger onClick={toggleSidebar} isOpen={sidebarOpen} />
             
                 <SearchIcon/>
             </div>
@@ -43,6 +35,7 @@ const NavMenu = () => {
                 <TwitterIcon/>
                 <InstagramIcon/>
             </div>
+            {sidebarOpen && <SideBar isOpen={sidebarOpen} onClose={toggleSidebar} />}
         </div>
     )
 }

@@ -1,0 +1,16 @@
+
+.Hamburger{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 90%;
+}
+@media (min-width: 768px) and (min-width: 768px) {
+    .Hamburger{
+        width: 50%;
+    }
+  }
+
+  .hidden{
+    display: hidden;
+  }
