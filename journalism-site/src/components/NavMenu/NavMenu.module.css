@@ -188,4 +188,17 @@
 
   
  
-  
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
+  display: none; /* Hide by default */
+  z-index: 9999; /* Higher z-index to overlay other content */
+}
+
+.show-overlay {
+  display: block; /* Show when active */
+}

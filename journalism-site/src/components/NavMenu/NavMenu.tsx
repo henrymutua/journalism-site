@@ -4,6 +4,7 @@ import styles from './NavMenu.module.css';
 import { SearchIcon, FacebookIcon, TwitterIcon, InstagramIcon} from '../Icons/Icons';
 import Hamburger from '../Hamburger/HamburgerIcon';
 import SideBar from '../SideBar/SideBar';
+import Link from 'next/link';
 
 const NavMenu = () => {
 
@@ -17,25 +18,27 @@ const NavMenu = () => {
         <div className={styles.NavMenu}>
             <div className={styles.NavMenuItemOne}>
                 
-                    <Hamburger onClick={toggleSidebar} isOpen={sidebarOpen} />
+                    <Hamburger onClick={toggleSidebar} />
+                    
+                    
             
                 <SearchIcon/>
             </div>
             <div className={styles.NavMenuItemTwo}>
-                <div className={styles.ItemOne}>LATEST</div>
-                <div className={styles.ItemTwo}>FEATURES</div>
-                <div className={styles.ItemThree}>ARCHIVES</div>
-                <div className={styles.ItemFour}>ABOUT</div>
-                <div className={styles.ItemFive}>MASTHEAD</div>
-                <div className={styles.ItemSix}>CAREERS</div>
-                <div className={styles.ItemSeven}>EVENTS</div>
+            <div className={styles.ItemOne}><Link href='/'>HOME</Link></div>
+                <div className={styles.ItemTwo}><Link href='/Features'>FEATURES</Link></div>
+                 <div className={styles.ItemThree}><Link href='/Archives'>ARCHIVES</Link></div>
+                 <div className={styles.ItemFour}><Link href='/About'>ABOUT</Link></div>
+                 <div className={styles.ItemFive}><Link href='/Masthead'>MASTHEAD</Link></div>
+                 <div className={styles.ItemSix}><Link href='/Careers'>CAREERS</Link></div>
+                 <div className={styles.ItemSeven}><Link href='/Events'>EVENTS</Link></div>
             </div>
             <div className={styles.NavMenuItemThree}>
                 <FacebookIcon/>
                 <TwitterIcon/>
                 <InstagramIcon/>
             </div>
-            {sidebarOpen && <SideBar isOpen={sidebarOpen} onClose={toggleSidebar} />}
+            {sidebarOpen && <SideBar active={sidebarOpen} onClose={toggleSidebar} />}
         </div>
     )
 }
