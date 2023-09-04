@@ -9,7 +9,7 @@ const Footer = () =>{
     return(
         <div className={styles.Footer}>
             <div className={styles.FooterOne}>
-                <Header/>
+              
                 <p>COPYRIGHT &copy; CHEKI {new Date().getFullYear()}</p>
             </div>
             <div className={styles.FooterTwo}>
