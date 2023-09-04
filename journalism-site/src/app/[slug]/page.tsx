@@ -1,32 +1,62 @@
 "use client";
 
 import React from 'react'
-import { useRouter } from 'next/navigation';
-import newsArticle, { Article }  from '../../data/data' 
+import { GetStaticProps, GetStaticPaths } from 'next';
 import Image from 'next/image'; 
 import styles from './News.module.css'
+import NewsDetailPage from '@/components/NewsDetailPage/NewsDetailPage';
 
-const NewsDetailPage: React.FC = () => {
-  const router = useRouter();
-  const { slug } = router.query as { slug: string };
+interface Article{
+  id: number;
+  title: string;
+  slug: string;
+  content: string;
+  author: string;
+  date: string;
+  imageUrl: string;
+}
 
-  // Find the news article data corresponding to the ID
+export const getStaticPaths: GetStaticPaths = async () => {
+  // Fetch the list of news articles and get their slugs
+  const res = await fetch('https://.../posts'); // Replace with your actual API endpoint
+  const newsArticles: Article[] = await res.json();
 
-  
-  const article: Article | undefined = newsArticle.find((article) => article.slug === slug);
+  const paths = newsArticles.map((article) => ({
+    params: { slug: article.slug }, // Use the slug as the parameter
+  }));
 
-
-  if (!article) {
-    return <div><p>News article not found</p></div>;
-  }
-
-  return (
-    <div className={styles.container}>
-      <h1>{article.title}</h1>
-      <Image src={article.imageUrl} alt={article.title}  /> {/* Adjust width and height as needed */}
-      <p>{article.content}</p>
-    </div>
-  );
+  return { paths, fallback: false };
 };
 
-export default NewsDetailPage;
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const slug = params?.slug as string;
+
+  // Fetch the news article data based on the slug
+  const res = await fetch(`https://.../posts/${slug}`); // Replace with your actual API endpoint
+  const article: Article = await res.json();
+
+  return {
+    props: {
+      article,
+    },
+  };
+};
+
+
+const NewsDetail: React.FC<{ article: Article }> = ({ article }) => {
+  return (
+    <div className={styles.container}>
+
+  <NewsDetailPage article={article}/>
+
+
+  </div>
+
+  );// Access the article property
+;
+}
+
+
+
+export default NewsDetail;
+
