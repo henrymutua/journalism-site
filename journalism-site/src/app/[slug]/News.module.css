@@ -8,6 +8,15 @@
     font-family: 'Cardo', serif;
     line-height: 1.6;
     overflow: scroll;
+    justify-content: space-between;
   }
   
-  
+  .NewsImage{
+    height: 65%;
+    width: 100%;
+    border-radius: 5em;
+  }
+
+  .par{
+    padding: 3em;
+  }

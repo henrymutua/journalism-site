@@ -9,7 +9,7 @@ const LatestBody = () => {
 
     return (
         <>
-            <Link href="/posts/[slug]" as={`/${sortedArticle.slug}`}>
+            <Link href={`/${sortedArticle.slug}`}>
                 <div className={styles.LatestBody}>
 
                     <img
