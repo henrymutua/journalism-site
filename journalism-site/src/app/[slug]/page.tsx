@@ -17,11 +17,8 @@ interface Article {
   imageUrl: string;
 }
 
-interface Props {
-  article: Article | null; // Corrected the type here, it should be Article | null
-}
 
-const NewsDetail: React.FC<Props> = ({}) => {
+const NewsDetail: React.FC<Article> = ({}) => {
   const searchParams = useSearchParams()
   const pathName = usePathname()
   const query = pathName?.split("/")
