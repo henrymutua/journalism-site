@@ -11,14 +11,16 @@ const LatestBody = () => {
         <>
             <Link href={`/${sortedArticle.slug}`}>
                 <div className={styles.LatestBody}>
-
+                <div className={styles.bodyTitle}>
+                    Latest
+                </div>
                     <img
                         src={sortedArticle.imageUrl}
                         className={styles.NewsImage}
                     />
                     <div className={styles.NewsText}>
                         <div><h1>{sortedArticle.title}</h1></div>
-                        <div><h2>{sortedArticle.author}</h2></div>
+                        <div>by {sortedArticle.author}</div>
                         <div><h3>{sortedArticle.date}</h3></div>
                         <div className={styles.paragraph}>{sortedArticle.content.slice(0, 500)}...</div>
                     </div>

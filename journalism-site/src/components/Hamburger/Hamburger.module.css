@@ -7,9 +7,20 @@
 }
 @media (min-width: 768px) and (min-width: 768px) {
     .Hamburger{
+        height: 120%;
         width: 50%;
     }
+
   }
+
+  @media (min-width: 769px) and (min-width: 1024px) {
+    .Hamburger{
+        height: 120%;
+        width: 80%;
+    }
+    
+  }
+
 
   .hidden{
     display: hidden;

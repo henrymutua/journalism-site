@@ -12,9 +12,11 @@ import LatestBody from '@/components/LatestBody/LatestBody';
 
 
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+   // Initialize the router
   
   return (
     <div className={styles.main}>

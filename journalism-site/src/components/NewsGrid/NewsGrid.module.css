@@ -16,7 +16,7 @@
 .NewsGridItem{
     width: 400px;
     height: 50%;
-    margin-bottom: 6em;
+    margin-bottom: 8em;
 }
 
 @media (max-width: 320px){

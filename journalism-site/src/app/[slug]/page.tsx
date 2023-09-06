@@ -36,13 +36,14 @@ const NewsDetail: React.FC<Props> = ({}) => {
     <div className={styles.container}>
       {article ? (
         <>
-          <h1>{article.title}</h1>
+          <div className={styles.headingOne}>{article.title}</div>
           <Image src={article.imageUrl} 
           alt={article.title}
            width={600}
-           height={400} />
-           <div>by {article.author}</div>
-           <h3>{article.date}</h3>
+           height={400}
+           className={styles.containerImage} />
+           <div className={styles.authorName}>by {article.author}</div>
+           <div className={styles.articleDate}>{article.date}</div>
           <div className={styles.par}><p>{article.content}</p></div>
         </>
       ) : (

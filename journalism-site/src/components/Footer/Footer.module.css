@@ -35,6 +35,7 @@
     display: flex;
     width: 30%;
     justify-content: space-between;
+    height: 20%;
 
 }
 
@@ -55,7 +56,7 @@
             flex-direction: column;
             align-items: center;
             height: 20%;
-            margin-top: 115em;
+            margin-top: 125em;
             gap: 3em;
             
         }
@@ -66,6 +67,7 @@
             width: 100%;
             align-items: center;
             text-align: center;
+            justify-content: center;
             
         }
         .LogoFooter{
@@ -86,7 +88,7 @@
         }
 
         .FooterIcons{
-            width: 55%;
+            width: 75%;
         }
 
         .FooterOne p {
@@ -117,7 +119,7 @@
         width: 100%;
     }
     .FooterIcons{
-        width: 75%;
+        width: 100%;
     }
     .FooterThree{
         margin-top: 2em;
@@ -126,8 +128,26 @@
 
 @media (min-width: 426px) and (max-width: 768px){
     .Footer{
-        margin-top: 130em;
+        margin-top: 110em;
         text-align: center;
+    }
+
+    .FooterTwo{
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .facebook{
+        width: 40%;
+        height: 75%;
+    }
+
+    .instagram{
+        width: 40%;
+    }
+
+    .twitter{
+        width: 40%;
     }
 }
 

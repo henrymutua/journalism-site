@@ -15,9 +15,9 @@ const Footer = () =>{
             <div className={styles.FooterTwo}>
                 <p>STAY IN TOUCH:</p>
                 <div className={styles.FooterIcons}>
-                    <FacebookIcon/>
-                    <TwitterIcon/>
-                    <InstagramIcon/>
+                    <div className={styles.facebook}><a href="https://www.facebook.com/Creatives.Garage/"><FacebookIcon/></a></div>
+                    <div className={styles.twitter}><a href="https://twitter.com/cr8vesgarage"><TwitterIcon/></a></div>
+                    <div className={styles.instagram}><a href="https://www.instagram.com/creativesgarage/"><InstagramIcon/></a></div>
                 </div>
             </div>
             <div className={styles.FooterThree}>

@@ -72,14 +72,14 @@
       min-height: 10%;
     }
     .NavMenuItemOne{
-      width: 30%;
+      width: 40%;
     }
     .NavMenuItemTwo {
       display: none;
       /* Apply your adjusted styles for larger screens here */
     }
     .NavMenuItemThree{
-      width: 35%;
+      width: 50%;
     }
   }
 
@@ -92,14 +92,14 @@
     }
 
     .NavMenuItemOne{
-      width: 30%;
+      width: 35%;
     }
 
    .NavMenuItemTwo{
     display: none;
    }
    .NavMenuItemThree{
-    width: 25%;
+    width: 50%;
    }
   }
   @media (min-width: 426px) and (max-width: 768px) {
@@ -108,6 +108,8 @@
       justify-content: space-between;
     }
     .NavMenuItemOne{
+      height: 100%;
+      width: 20%;
       gap: 0.5em;
     }
     .NavMenuItemTwo {
@@ -119,7 +121,15 @@
   }
 
   @media (min-width: 769px) and (max-width: 1600px) {
-    
+    .NavMenu{
+      justify-content: space-between;
+    }
+
+    .NavMenuItemOne{
+      width: 20%;
+    }
+
+
     .NavMenuItemTwo {
       margin-left: 1em;
       width: 90%;
@@ -201,4 +211,8 @@
 
 .show-overlay {
   display: block; /* Show when active */
+}
+
+.searchResults{
+  display: none;
 }

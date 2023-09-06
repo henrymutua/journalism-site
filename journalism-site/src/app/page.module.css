@@ -10,5 +10,6 @@
   font-family: 'Cardo', serif;
   line-height: 1.6;
   overflow: scroll;
+  justify-content: space-between;
 }
 
