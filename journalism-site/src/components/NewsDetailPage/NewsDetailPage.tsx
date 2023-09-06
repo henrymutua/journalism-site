@@ -10,6 +10,7 @@ interface NewsDetailPageProps {
 }
 
 const NewsDetailPage: React.FC<NewsDetailPageProps> = ({ article }) => {
+    console.log(article)
   if (!article) {
     return <div><p>News article not found</p></div>;
   }
