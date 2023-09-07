@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './NewsItem.module.css';
 import newsArticle from '@/data/data';
 import { Article } from '@/data/data';
+import Image from 'next/image';
 
 
 interface NewsItemProps{
@@ -11,9 +12,10 @@ interface NewsItemProps{
 const NewsItem: React.FC<NewsItemProps> =({ article }) => {
     return(
        <div className={styles.ItemContainer}>
-        <img
+        <Image
             src={article.imageUrl}
             className={styles.NewsItemImage}
+            alt='news'
             />
             <div className={styles.NewsItemText}>
                 <div><h1>{article.title}</h1></div>

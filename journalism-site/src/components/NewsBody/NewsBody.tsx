@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './NewsBody.module.css';
 import { Article } from '@/data/data';
+import Image from 'next/image';
 
 interface NewsBodyProps {
     article: Article;
@@ -13,6 +14,7 @@ const NewsBody : React.FC<NewsBodyProps> =({ article }) =>{
             <img
             src={article.imageUrl}
             className={styles.NewsImage}
+            alt='news'
             />
             <div className={styles.NewsText}>
                 <div><h1>{article.title}</h1></div>
