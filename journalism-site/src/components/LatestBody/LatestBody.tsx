@@ -2,8 +2,8 @@ import React from 'react';
 import styles from './LatestBody.module.css'
 import newsArticle from '@/data/data';
 import Link from 'next/link'
-import Image
- from 'next/image';
+import Image from 'next/image';
+
 const LatestBody = () => {
     const latestArticle = [...newsArticle].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
     const sortedArticle = latestArticle[0];
@@ -12,9 +12,6 @@ const LatestBody = () => {
         <>
             <Link href={`/${sortedArticle.slug}`}>
                 <div className={styles.LatestBody}>
-                <div className={styles.bodyTitle}>
-                    Latest
-                </div>
                     <Image
                         src={sortedArticle.imageUrl}
                         className={styles.NewsImage}
